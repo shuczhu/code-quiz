@@ -1,7 +1,6 @@
 *, *::after, *::before {
     box-sizing:border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* border: red solid  */
 }
 
 .hide {
@@ -30,8 +29,7 @@ body {
     background-color: var(--backgroundColor);
     padding: 10%;
     border-radius: 15%;
-    /* max-width: 450px;
-    margin-left: 15%; */
+
 }
 
 .greeting-card button {
@@ -48,9 +46,6 @@ body {
     background-color: var(--buttonBgSecondary)
 }
 
-/* .greeting-card {
-    display: none;
-} */
 
 .quiz-container {
     background-color: var(--backgroundColor);
@@ -60,7 +55,6 @@ body {
     padding-bottom: 15%;
     
 }
-
 
 .quiz-container button {
     color: var(--buttonTextPrimary);
@@ -73,8 +67,6 @@ body {
     text-align:left;
 }
 
-
-
 .quiz-card button:hover {
     background-color: var(--buttonBgSecondary)
 }
@@ -85,9 +77,6 @@ body {
     right: 0%;    
 }
 
-/* .quiz-card {
-    display: none;
-} */
 
 .submit-initial-card {
     background-color: var(--backgroundColor);
@@ -105,10 +94,6 @@ body {
     border-radius: 10px;
     border: none;
 }
-
-/* .submit-initial-card {
-    display: none;
-} */
 
 .score-card {
     background-color: var(--backgroundColor);
@@ -138,6 +123,3 @@ button:hover {
     background-color: var(--buttonBgSecondary)
 }
 
-/* .score-card {
-    display: none;
-} */
