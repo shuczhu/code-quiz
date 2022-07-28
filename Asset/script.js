@@ -1,6 +1,5 @@
 var questionBank = [
     {
-        index: 0,
         question: "String values must be enclosed within ______ when being assigned to variables.",
         answer:
             ["commas",
@@ -11,7 +10,6 @@ var questionBank = [
         correctAnswer: "quotes"
     },
     {
-        index: 1,
         question: "A very useful tool used during development and debugging for printing content to the debugger is:",
         answer:
             ["JavaScript",
@@ -22,7 +20,6 @@ var questionBank = [
         correctAnswer: "console.log"
     },
     {
-        index: 2,
         question: "The condition in an if / else statement is enclosed with ______",
         answer: [
             "quotes",
@@ -33,7 +30,6 @@ var questionBank = [
         correctAnswer: "curly brackets"
     },
     {
-        index: 3,
         question: "Commonly used data types DO NOT include:",
         answer: [
             "strings",
@@ -44,7 +40,6 @@ var questionBank = [
         correctAnswer: "alerts"
     },
     {
-        index: 4,
         question: "Arrays in JavaScript can be used to store ______.",
         answer: [
             "numbers and strings",
@@ -72,10 +67,27 @@ var scoreListEl = document.getElementById("score-list")
 var goBackEl = document.getElementById("go-back")
 var clearScore = document.getElementById("clear-score")
 
+//create a shuffle function to randomize order of questions and answers. 
+function shuffle(arr) {
+    var currentIndex = arr.length;
+    var randomIndex;
+
+    while (currentIndex != 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        [arr[currentIndex], arr[randomIndex]] = [arr[randomIndex], arr[currentIndex]];
+
+    }
+
+    return arr;
+}
+
 //startQuiz function for when start quiz button is clicked 
 var startQuiz = function () {
     document.querySelector(".greeting-card").classList.add("hide");
     document.querySelector(".quiz-container").classList.remove("hide");
+    shuffle(questionBank);
     buildQuiz();
     countDown();
 }
@@ -104,6 +116,8 @@ var buildQuiz = function () {
     cardQuizEl.innerHTML = "";
 
     question.textContent = questionBank[questionIndex].question;
+
+    shuffle(questionBank[questionIndex].answer);
 
     for (var j = 0; j < questionBank[questionIndex].answer.length; j++) {
         var button = document.createElement("button");
@@ -165,7 +179,6 @@ var incorrectPrompt = function () {
 
 
 setScore();
-
 
 
 //submit score into local storage

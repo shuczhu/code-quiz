@@ -3,10 +3,12 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* set hide class to be hidden */
 .hide {
     display: none;
 }
 
+/* setting variables for color scheme */
 :root {
     --buttonBgPrimary: rgb(111, 144, 233);
     --buttonTextPrimary: rgb(255, 255, 255);
@@ -14,6 +16,7 @@
     --backgroundColor: rgba(253, 253, 253, 0.438);
 }
 
+/* global body properties and background image */
 body {
     padding: 100px 20%;
     background-image: url("./images/blue-sky-with-white-clouds-background-border-of-clouds-simple-cartoon-design-flat-style-illustration-free-vector.webp");
@@ -24,6 +27,7 @@ body {
 
 }
 
+/* greeting card format */
 .greeting-card {
     text-align: center;
     background-color: var(--backgroundColor);
@@ -47,6 +51,7 @@ body {
 }
 
 
+/* quiz card format */
 .quiz-container {
     background-color: var(--backgroundColor);
     padding: 10%;
@@ -71,13 +76,7 @@ body {
     background-color: var(--buttonBgSecondary)
 }
 
-#next {
-    margin-top: 10%;
-    width: 20%;
-    right: 0%;    
-}
-
-
+/* submit initial card */
 .submit-initial-card {
     background-color: var(--backgroundColor);
     padding: 10%;
@@ -95,6 +94,7 @@ body {
     border: none;
 }
 
+/* score card */
 .score-card {
     background-color: var(--backgroundColor);
     padding: 10%;
