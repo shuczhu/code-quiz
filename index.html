@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz!</title>
+    <link rel="stylesheet" href="./Asset/style.css">
+</head>
+<body>
+
+    <div class="greeting-card" id="greeting-card">
+    <h1>Coding Quiz Challenge</h1>
+    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+    <button id="start-quiz">Start Quiz</button>
+    </div>
+    
+    <div class = "quiz-container hide">
+    <div><p id="clock">Time Left: 1:00 </p></div>
+    <div class="question"><h1 id="question">String values must be enclosed within ______ when being assigned to variables.</h1></div>
+    <div class="quiz-card">
+        <div class="options button"><button id="option1">1. commas
+        </button></div> 
+        <div class="options button"><button id="option2">2. curly brackets
+        </button></div>
+        <div class="options button"><button id="option3">3. quotes
+        </button></div>
+        <div class="options button"><button id="option4">4. parenthesis
+        </button></div>
+    </div>
+    <div id="prompt"></div>
+</div>
+
+    <div class="submit-initial-card hide">
+        <h1>All done!</h1>
+        <div><p id="show-final-score">Your final score is 22</p></div>
+        <div id="enter-initial">
+            <form id="score-form">
+                <label>Enter Initials:</label>
+                <input id="initial" type="text">
+                <input id="submit" type="submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="score-card hide">
+        <h1>High Scores</h1>
+        <ul id="score-list"></ul>
+        <button id="go-back">Go Back</button>
+        <button id="clear-score">Clear High Scores</button>
+    </div>
+
+
+    <script src="./Asset/script.js"></script>
+</body>
+</html>

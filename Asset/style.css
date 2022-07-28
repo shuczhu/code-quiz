@@ -1,0 +1,143 @@
+*, *::after, *::before {
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border: red solid  */
+}
+
+.hide {
+    display: none;
+}
+
+:root {
+    --buttonBgPrimary: rgb(111, 144, 233);
+    --buttonTextPrimary: rgb(255, 255, 255);
+    --buttonBgSecondary: rgb(37, 37, 110);
+    --backgroundColor: rgba(253, 253, 253, 0.438);
+}
+
+body {
+    padding: 100px 20%;
+    background-image: url("./images/blue-sky-with-white-clouds-background-border-of-clouds-simple-cartoon-design-flat-style-illustration-free-vector.webp");
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    height: 100%;
+    width: 100%;
+
+}
+
+.greeting-card {
+    text-align: center;
+    background-color: var(--backgroundColor);
+    padding: 10%;
+    border-radius: 15%;
+    /* max-width: 450px;
+    margin-left: 15%; */
+}
+
+.greeting-card button {
+    color: var(--buttonTextPrimary);
+    background-color: var(--buttonBgPrimary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5%;
+
+}
+
+.greeting-card button:hover {
+    background-color: var(--buttonBgSecondary)
+}
+
+/* .greeting-card {
+    display: none;
+} */
+
+.quiz-container {
+    background-color: var(--backgroundColor);
+    padding: 10%;
+    border-radius: 15%;
+    border:var(--buttonBgPrimary) 2px dotted;
+    padding-bottom: 15%;
+    
+}
+
+
+.quiz-container button {
+    color: var(--buttonTextPrimary);
+    background-color: var(--buttonBgPrimary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 2px;
+    width: 100%;
+    text-align:left;
+}
+
+
+
+.quiz-card button:hover {
+    background-color: var(--buttonBgSecondary)
+}
+
+#next {
+    margin-top: 10%;
+    width: 20%;
+    right: 0%;    
+}
+
+/* .quiz-card {
+    display: none;
+} */
+
+.submit-initial-card {
+    background-color: var(--backgroundColor);
+    padding: 10%;
+    border-radius: 15%;
+    border:var(--buttonBgPrimary) 2px dotted;
+    padding-bottom: 15%;
+    
+}
+
+.submit-initial-card #submit {
+    color: var(--buttonTextPrimary);
+    background-color: var(--buttonBgPrimary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* .submit-initial-card {
+    display: none;
+} */
+
+.score-card {
+    background-color: var(--backgroundColor);
+    padding: 10%;
+    border-radius: 15%;
+    border:var(--buttonBgPrimary) 2px dotted;
+    padding-bottom: 15%;
+}
+
+.score-card li {
+    background-color:rgba(136, 136, 226, 0.418);
+    padding: 5px 10px;
+}
+
+.score-card button {
+    color: var(--buttonTextPrimary);
+    background-color: var(--buttonBgPrimary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 2px;
+    margin-top: 30px;
+    text-align:left;
+}
+
+button:hover {
+    background-color: var(--buttonBgSecondary)
+}
+
+/* .score-card {
+    display: none;
+} */
