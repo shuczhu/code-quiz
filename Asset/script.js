@@ -95,6 +95,7 @@ var startQuiz = function () {
 //timer for count down 
 var countDown = function () {
     secondsLeft = 60;
+    timer.textContent = "Time Left: " + secondsLeft;
     timerClock = setInterval(function () {
         secondsLeft--;
         timer.textContent = "Time Left: " + secondsLeft;
