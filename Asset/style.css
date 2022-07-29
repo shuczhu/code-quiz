@@ -103,8 +103,13 @@ body {
     padding-bottom: 15%;
 }
 
-.score-card li {
+.score-card li:nth-child(odd) {
     background-color:rgba(136, 136, 226, 0.418);
+    padding: 5px 10px;
+}
+
+.score-card li:nth-child(even) {
+    background-color:rgba(136, 136, 226, 0.041);
     padding: 5px 10px;
 }
 

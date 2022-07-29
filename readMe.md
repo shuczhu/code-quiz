@@ -15,7 +15,9 @@ You can store your initial in the scoreboard in the end!!
 ![image](https://user-images.githubusercontent.com/108253013/181646723-d3d73e33-caf4-4bd2-b735-c7d7ab9c442d.png)
 ![image](https://user-images.githubusercontent.com/108253013/181646747-89c7f530-feae-4e35-9969-f25bd53803a3.png)
 ![image](https://user-images.githubusercontent.com/108253013/181646823-6d7e511c-bbff-4421-8f97-f66ec8310e21.png)
-![image](https://user-images.githubusercontent.com/108253013/181646880-c4efe11e-94bc-4add-a850-6c651e09e17a.png)
+![image](https://user-images.githubusercontent.com/108253013/181663643-08ac45da-c116-42bf-b981-2139fb3393d1.png)
+![image](https://user-images.githubusercontent.com/108253013/181663607-74bab961-08f8-4448-8a50-50d1cb7187f0.png)
+
 
 
 

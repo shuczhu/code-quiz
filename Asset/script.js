@@ -90,6 +90,7 @@ var startQuiz = function () {
     shuffle(questionBank);
     buildQuiz();
     countDown();
+    timerBar();
 }
 
 //timer for count down 
@@ -104,6 +105,7 @@ var countDown = function () {
             clearInterval(timerClock);
             document.querySelector(".quiz-container").classList.add("hide");
             document.querySelector(".submit-initial-card").classList.remove("hide");
+            document.getElementById("end-result").textContent = "You ran out of time!";
         }
 
     }, 1000);
